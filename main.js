@@ -38,7 +38,9 @@ function changeColor() {
 
 function clickHandler(event) {
   changeColor();
-  event.preventDefault();
+  // the default action that belongs to the event will not occur
+  // in this example it prevents the color picker from showing up
+  event.preventDefault(); 
 }
 
 document.addEventListener('click', clickHandler);
